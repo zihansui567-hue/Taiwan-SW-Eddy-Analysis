@@ -1,11 +1,11 @@
-# Mesoscale eddy analysis southwest of Taiwan
+# Mesoscale Eddies and Kuroshio Variability
 
-These six MATLAB files document how I analysed sea-level variability, Kuroshio intrusion, and the evolution of a tracked mesoscale eddy southwest of Taiwan.
+I use daily sea-level fields to identify recurring spatial patterns and classify Kuroshio paths. For a tracked mesoscale eddy, I use velocity, density, and bathymetry to map vorticity terms and examine energy exchanges at successive stages of its evolution.
 
 | MATLAB file | What it computes |
 |---|---|
 | [KSI_analysis.m](ksi/KSI_analysis.m) | Computes the Kuroshio South China Sea Index from daily absolute dynamic topography and counts events by path class using the supplied event table. |
-| [EOF_Taiwan_SW_2014_2023.m](eof/EOF_Taiwan_SW_2014_2023.m) | Decomposes area-weighted daily sea-level anomalies into spatial patterns and time coefficients for 2014–2023. |
+| [Sea-level EOF analysis](eof/EOF_Taiwan_SW_2014_2023.m) | Decomposes area-weighted daily sea-level anomalies into spatial patterns and time coefficients for 2014–2023. |
 | [RUN_eddy_fullpath_vorticity.m](eddy_diagnostics/RUN_eddy_fullpath_vorticity.m) | Maps planetary potential vorticity advection (APV) and the joint effect of baroclinicity and relief (JEBAR) at eight dates. Both diagnostics use upper-ocean data and full bathymetric depth. |
 | [RUN_eddy_fullpath_conversion.m](eddy_diagnostics/RUN_eddy_fullpath_conversion.m) | Computes barotropic and baroclinic energy conversion in a 30-day window around each of the eight dates. |
 | [Energy.m](energy_reservoirs/Energy.m) | Computes annual mean and eddy kinetic energy and includes the baseline potential-energy calculation. |
